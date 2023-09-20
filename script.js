@@ -67,10 +67,23 @@ console.log(days(1))
 
 console.groupEnd()
 
+console.groupCollapsed('5-a Funkcija')
 
 // 5. Funkciją, kuri konvertuoja metus į valandas:
 // 5.1. Funkcija priima vieną parametrą: metų skaičių.
 // 5.2. Funkcija grąžina atsakymą tokiu formatu: 5 metai turi 43800 valandas.
+
+function year(amount) {
+    let hours = (amount * 365 * 24)
+    return `${amount} metai turi ${hours} valandas`
+}
+
+console.log(year(5))
+console.log(year(35))
+console.log(year(1))
+
+
+console.groupEnd()
 
 // 6. Funkciją, kuri konvertuoja mėnesius į valandas:
 // 6.1. Funkcija priima vieną parametrą: mėnesių skaičių.
