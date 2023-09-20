@@ -50,9 +50,23 @@ console.log(days(1))
 
 console.groupEnd()
 
+console.groupCollapsed('4-a Funkcija')
+
 // 4. Funkciją, kuri konvertuoja dienas į metus:
 // 4.1. Funkcija priima vieną parametrą: dienų skaičių.
 // 4.1. Funkcija grąžina atsakymą tokiu formatu (atsakymą apvalinant): 365 dienos yra 1 metai.
+
+function days(amount) {
+    let year = (amount / 365)
+    return `${amount} dienos yra ${year} metai`
+}
+
+console.log(days(365))
+console.log(days(35))
+console.log(days(1))
+
+console.groupEnd()
+
 
 // 5. Funkciją, kuri konvertuoja metus į valandas:
 // 5.1. Funkcija priima vieną parametrą: metų skaičių.
