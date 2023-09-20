@@ -33,10 +33,22 @@ console.log(readBooks(1))
 
 console.groupEnd()
 
+console.groupCollapsed('3-čia Funkcija')
 
 // 3. Funkciją, kuri konvertuoja dienas į savaites:
 // 3.1. Funkcija priima vieną parametrą: dienų skaičių.
 // 3.2. Funkcija grąžina atsakymą tokiu formatu: 35 dienos yra 5 savaitės.
+
+function days(amount) {
+    let weeks = (amount / 7)
+    return `${amount} dienos yra ${weeks} savaitės`
+}
+
+console.log(days(5))
+console.log(days(35))
+console.log(days(1))
+
+console.groupEnd()
 
 // 4. Funkciją, kuri konvertuoja dienas į metus:
 // 4.1. Funkcija priima vieną parametrą: dienų skaičių.
