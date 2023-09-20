@@ -103,6 +103,20 @@ console.log(month(1))
 
 console.groupEnd()
 
+console.groupCollapsed('7-a Funkcija')
+
 // 7. Funkciją, kuri konvertuoja mėnesius į minutes:
 // 7.1. Funkcija priima vieną parametrą: mėnesių skaičių.
 // 7.2. Funkcija grąžina atsakymą tokiu formatu: 2 mėnesiai turi 87600 minutes.
+
+function month(amount) {
+    let minutes = (amount * 30 * 24 * 60)
+    return `${amount} mėnesiai turi ${minutes} minutes`
+}
+
+console.log(month(2))
+console.log(month(35))
+console.log(month(1))
+
+
+console.groupEnd()
