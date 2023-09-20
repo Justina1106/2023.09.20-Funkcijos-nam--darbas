@@ -85,9 +85,23 @@ console.log(year(1))
 
 console.groupEnd()
 
+console.groupCollapsed('6-a Funkcija')
+
 // 6. Funkciją, kuri konvertuoja mėnesius į valandas:
 // 6.1. Funkcija priima vieną parametrą: mėnesių skaičių.
 // 6.2. Funkcija grąžina atsakymą tokiu formatu: 3 mėnesiai turi 2190 valandas.
+
+
+function month(amount) {
+    let hours = (amount * 30 * 24)
+    return `${amount} mėnesiai turi ${hours} valandas`
+}
+
+console.log(month(3))
+console.log(month(35))
+console.log(month(1))
+
+console.groupEnd()
 
 // 7. Funkciją, kuri konvertuoja mėnesius į minutes:
 // 7.1. Funkcija priima vieną parametrą: mėnesių skaičių.
