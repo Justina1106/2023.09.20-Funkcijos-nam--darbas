@@ -1,3 +1,5 @@
+console.groupCollapsed('1-ma Funkcija')
+
 // 1. Funkciją, kuri paverčia žmogaus metus į šuns metus:
 // 1.1. Funkcija priima vieną parametrą: žmogaus amžius.
 // 1.2. Funkcija grąžina atsakymą tokiu formatu: 5 žmogaus metai yra 35 šuns metai.
@@ -11,12 +13,26 @@ console.log(personAge(5))
 console.log(personAge(10))
 console.log(personAge(1))
 
+console.groupEnd()
 
-
+console.groupCollapsed('2-ma Funkcija')
 
 // 2. Funkciją, kuri skaičiuoja per kiek laiko reikia perskaityti knygą, kad pasiekti užsibrėžtą knygų per metaus skaičių:
 // 2.1. Funkcija priima vieną parametrą: norimų per metus perskaityti knygų skaičių.
 // 2.1. Funkcija grąžina atsakymą tokiu formatu: norint perskaityti 10 knygų per metus, vienai knygai perskaityti turėsi 36 dienas.
+
+function readBooks(amount) {
+    let time = ((amount / 12) * 30)
+    return `norint perskaityti ${amount} knygų per metus, vienai knygai perskaityti turėsi ${time} dienas `
+}
+
+console.log(readBooks(5))
+console.log(readBooks(10))
+console.log(readBooks(1))
+
+
+console.groupEnd()
+
 
 // 3. Funkciją, kuri konvertuoja dienas į savaites:
 // 3.1. Funkcija priima vieną parametrą: dienų skaičių.
