@@ -22,7 +22,7 @@ console.groupCollapsed('2-ma Funkcija')
 // 2.1. Funkcija grąžina atsakymą tokiu formatu: norint perskaityti 10 knygų per metus, vienai knygai perskaityti turėsi 36 dienas.
 
 function readBooks(amount) {
-    let time = ((amount / 12) * 30)
+    let time = (365 / amount)
     return `norint perskaityti ${amount} knygų per metus, vienai knygai perskaityti turėsi ${time} dienas `
 }
 
@@ -39,14 +39,14 @@ console.groupCollapsed('3-čia Funkcija')
 // 3.1. Funkcija priima vieną parametrą: dienų skaičių.
 // 3.2. Funkcija grąžina atsakymą tokiu formatu: 35 dienos yra 5 savaitės.
 
-function days(amount) {
+function day(amount) {
     let weeks = (amount / 7)
     return `${amount} dienos yra ${weeks} savaitės`
 }
 
-console.log(days(5))
-console.log(days(35))
-console.log(days(1))
+console.log(day(5))
+console.log(day(35))
+console.log(day(1))
 
 console.groupEnd()
 
@@ -92,14 +92,14 @@ console.groupCollapsed('6-a Funkcija')
 // 6.2. Funkcija grąžina atsakymą tokiu formatu: 3 mėnesiai turi 2190 valandas.
 
 
-function month(amount) {
-    let hours = (amount * 30 * 24)
-    return `${amount} mėnesiai turi ${hours} valandas`
+function months(quantyti) {
+    let hour = (quantyti * 31 * 24)
+    return `${quantyti} mėnesiai turi ${hour} valandas`
 }
 
-console.log(month(3))
-console.log(month(35))
-console.log(month(1))
+console.log(months(3))
+console.log(months(35))
+console.log(months(1))
 
 console.groupEnd()
 
