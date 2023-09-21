@@ -22,7 +22,7 @@ console.groupCollapsed('2-ma Funkcija')
 // 2.1. Funkcija grąžina atsakymą tokiu formatu: norint perskaityti 10 knygų per metus, vienai knygai perskaityti turėsi 36 dienas.
 
 function readBooks(amount) {
-    let time = (365 / amount)
+    let time = Math.floor(365 / amount)
     return `norint perskaityti ${amount} knygų per metus, vienai knygai perskaityti turėsi ${time} dienas `
 }
 
@@ -40,7 +40,7 @@ console.groupCollapsed('3-čia Funkcija')
 // 3.2. Funkcija grąžina atsakymą tokiu formatu: 35 dienos yra 5 savaitės.
 
 function day(amount) {
-    let weeks = (amount / 7)
+    let weeks = (amount / 7).toFixed(1)
     return `${amount} dienos yra ${weeks} savaitės`
 }
 
@@ -57,7 +57,7 @@ console.groupCollapsed('4-a Funkcija')
 // 4.1. Funkcija grąžina atsakymą tokiu formatu (atsakymą apvalinant): 365 dienos yra 1 metai.
 
 function days(amount) {
-    let year = (amount / 365)
+    let year = (amount / 365).toFixed(2)
     return `${amount} dienos yra ${year} metai`
 }
 
